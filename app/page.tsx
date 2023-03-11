@@ -1,91 +1,46 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
+//CircleCI Logo Address: https://img.icons8.com/color/512/circleci.png
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <nav className="navbar flex gap-16 p-6 bg-blue-50 m-10 rounded-lg">
+        <div className="mr-auto">
+          <div className="flex items-center">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src="https://img.icons8.com/color/512/circleci.png"
+              alt="logo"
+              width="50"
+              height="50"
             />
-          </a>
+            <span className="font-bold text-blue-800 text-2xl">CircleCI</span>
+          </div>
+          <p className="text-sm text-blue-900">Tagline of company</p>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className="flex flex-col gap-y-2">
+          <h2 className="font-bold text-blue-800">Quick Links</h2>
+          <p className="text-sm font-medium text-blue-900">Home</p>
+          <p className="text-sm font-medium text-blue-900">About</p>
+          <p className="text-sm font-medium text-blue-900">Courses</p>
+          <p className="text-sm font-medium text-blue-900">Contact</p>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="flex flex-col gap-y-2">
+          <h2 className="font-bold text-blue-800">Contact Us</h2>
+          <p className="text-sm font-medium text-blue-900">Islamabad</p>
+          <p className="text-sm font-medium text-blue-900">Karachi</p>
+          <p className="text-sm font-medium text-blue-900">Peshawar</p>
+          <p className="text-sm font-medium text-blue-900">Lahore</p>
+        </div>
+        <div className="flex flex-col gap-y-2">
+          <h2 className="font-bold text-blue-800">Social</h2>
+          <p className="text-sm font-medium text-blue-900">Facebook</p>
+          <p className="text-sm font-medium text-blue-900">Discord</p>
+          <p className="text-sm font-medium text-blue-900">Instagram</p>
+          <p className="text-sm font-medium text-blue-900">YouTube</p>
+        </div>
+      </nav>
     </main>
-  )
+  );
 }
