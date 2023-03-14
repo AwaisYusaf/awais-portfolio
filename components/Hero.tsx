@@ -30,18 +30,18 @@ function Hero({}: Props) {
         </h1>
       </div>
       <div className="z-20 flex flex-shrink-0">
-        <Link href="#about">
+        <a href="#about">
           <button className="heroButton">About</button>
-        </Link>
-        <Link href="#experience">
+        </a>
+        <a href="#experience">
           <button className="heroButton">Experience</button>
-        </Link>
-        <Link href="#skills">
+        </a>
+        <a href="#skills">
           <button className="heroButton">Skills</button>
-        </Link>
-        <Link href="#projects" className="cursor-pointer">
+        </a>
+        <a href="#projects" className="cursor-pointer">
           <button className="heroButton">Projects</button>
-        </Link>
+        </a>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Header({}: Props) {
   return (
-    <header className="flex items-center justify-between sticky top-0 max-w-6xl mx-auto bg-[rgb(36,36,36)] text-white">
+    <header className="flex items-center justify-between overflow-hidden sticky top-0 max-w-6xl mx-auto text-white">
       <motion.div
         className="flex"
         initial={{ x: "-60vw", opacity: 0, scale: 0.5 }}
