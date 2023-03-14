@@ -29,7 +29,7 @@ function Hero({}: Props) {
           <Cursor />
         </h1>
       </div>
-      <div className="z-20 flex flex-shrink-0">
+      <div className="z-20 flex flex-shrink-0 px-4">
         <a href="#about">
           <button className="heroButton">About</button>
         </a>
