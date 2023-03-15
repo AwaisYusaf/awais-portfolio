@@ -5,7 +5,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <div className="h-screen flex flex-col relative items-center justify-center text-center mx-auto">
+    <div className="h-screen w-screen flex flex-col relative items-center justify-center text-center mx-auto">
       <h3 className="absolute top-24 tracking-[20px] text-gray-500 uppercase text-xl">
         skills
       </h3>
@@ -14,7 +14,7 @@ const Skills = (props: Props) => {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-3 xl:grid-cols-6 gap-5">
+      <div className="grid grid-cols-3 xl:grid-cols-6 gap-5 p-5">
         <Skill
           imgUrl={
             "https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"

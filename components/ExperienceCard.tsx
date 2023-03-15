@@ -5,7 +5,7 @@ type Props = {};
 
 export default function ExperienceCard(props: Props) {
   return (
-    <article className="flex flex-col items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] lg:w-[600px] bg-[#292929] p-10 snap-center overflow-hidden opacity-40 hover:opacity-100 transition-opacity cursor-pointer mt-16">
+    <article className="flex flex-col items-center space-y-2 flex-shrink-0 w-[400px] md:w-[450px] lg:w-[600px] bg-[#292929] p-10 snap-center overflow-hidden  cursor-pointer mt-16">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
