@@ -14,7 +14,7 @@ const Skills = (props: Props) => {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-3 xl:grid-cols-6 gap-5 p-5">
+      <div className="grid grid-cols-3 xl:grid-cols-6 gap-5 p-5 mt-6 lg:mt-0">
         <Skill
           imgUrl={
             "https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"

@@ -7,14 +7,13 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Full Stack Developer", "NextJS Expert", "WordPress Developer"],
+    words: ["Full Stack Developer", "MERN Expert", "NextJS Developer"],
     loop: true,
-    delaySpeed: 2002,
+    delaySpeed: 2000,
   });
   return (
     <div className="flex flex-col justify-center space-y-7 items-center min-h-screen w-full overflow-hidden">
       <BackgroundCircles />
-
       <img
         alt=""
         src="https://avatars.githubusercontent.com/u/69912913?v=4"
@@ -22,7 +21,7 @@ function Hero({}: Props) {
       />
       <div className="text-center z-10">
         <h1 className="uppercase text-sm text-gray-200 tracking-[15px] pb-2">
-          NextJS Engineer
+          Software Engineer
         </h1>
         <h1 className="font-semibold text-3xl lg:text-6xl px-5">
           <span>{text}</span>

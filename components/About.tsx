@@ -9,6 +9,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
       className="h-screen flex flex-col relative lg:flex-row lg:justify-around text-center mx-auto items-center px-10"
     >
       <h3 className="absolute top-20 tracking-[20px] text-gray-500 uppercase text-sm">
@@ -23,6 +24,7 @@ export default function About({}: Props) {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.2 }}
+          viewport={{ once: true }}
         />
       </div>
       <div className="flex flex-col lg:items-center lg:basis-1/2">

@@ -14,7 +14,7 @@ const Skill = (props: Props) => {
       <motion.img
         initial={{ x: props.translateLeft ? -100 : 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.4, delay: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
         src={props.imgUrl}
         className={`object-cover w-20 h-20 xl:w-24 xl:h-24 border border-gray-500 filter group-hover:grayscale rounded-full ${
