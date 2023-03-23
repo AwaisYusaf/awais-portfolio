@@ -10,17 +10,7 @@ function Projects({}: Props) {
         projects
       </h3>
       <div className="flex overflow-x-scroll w-full space-x-5 snap-x snap-mandatory z-20">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {/* <Project /> */}
       </div>
       <div className="absolute top-[30%] h-[200px] w-full bg-[#F7AB0A]/10 -skew-y-12" />
     </div>

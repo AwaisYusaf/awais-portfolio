@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-type Props = {};
+type Props = {
+  name: string;
+};
 
 function Project({}: Props) {
   return (
@@ -15,7 +17,7 @@ function Project({}: Props) {
         alt=""
       />
       <div className="max-w-5xl space-y-4 px-0 md:p-10">
-        <h3 className="text-4xl text-semibold text-center">Project details</h3>
+        <h3 className="text-4xl text-semibold text-center">Details</h3>
         <p className="text-lg text-center md:text-left">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ratione
           est tempora? Repellendus neque, a maiores cumque atque similique

@@ -38,6 +38,9 @@
   .heroButton{
     @apply px-5 py-2 text-gray-400 rounded-full uppercase tracking-widest text-xs cursor-pointer transition-all border border-[#242424] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40 
   }
+  .inputField {
+    @apply outline-none px-6 py-4 bg-slate-400/10 rounded-sm border-b border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
+  }
 }
 
 
